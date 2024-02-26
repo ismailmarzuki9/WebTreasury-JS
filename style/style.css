@@ -1,0 +1,84 @@
+body{
+    height: 1200px;
+  }
+  .border-start {
+  border-radius: 50% 0px 0px 0px;  
+  }
+  .border-right {
+  border-radius: 0px 0px 50% 0%;  
+  }
+  .card{
+    transition: transform .3s;
+    
+  }
+  .hover :hover{
+  /* border: 2px solid red; */
+  border-radius: 30% 0px;
+  background-color: green;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .AniJq{
+    background-color: rgb(255, 166, 0);
+    display: none;
+  }
+
+  @media only screen  and (max-width : 375px){
+    .container .row  {
+      font-size:small;
+      background-color: aqua;
+      border-color: none;
+      margin: 0px;
+    }
+    .container h1{
+      font-size: medium;
+    }
+    .container .row .col-sm-6 .imgC{
+      display: flex;
+      justify-content: center;
+      margin-top: 2px;
+      width: 10px;
+      height: 200px;
+    }
+    img {
+      width: 50px;
+      filter: drop-shadow(8px 8px 10px gray);
+      border-radius: 10%;
+    }
+    .row {
+      width: 300px;
+      justify-content: center;
+    }
+    .hover{
+      padding: auto;
+      font-size: small;
+      height: 200px;
+      width: 200px;
+      margin: 0% 0%;
+      /* background-color: black; */
+    }
+    .footer {
+      text-align: center;
+      background-color: black;
+      font-style: italic;
+      height: 100%;
+      background-size: 0px;
+      background-image: none;
+    }
+
+  }
+
+
+  /* animasi H1 */
+  .container .animasi{
+    animation: flash 1s infinite;
+    
+  }
+ @keyframes flash {
+  from {
+      filter: opacity(0);
+  }
+  to {
+      filter: opacity(1);
+      background-color: aquamarine;
+  }
+}
